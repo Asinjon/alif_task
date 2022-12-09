@@ -1,0 +1,115 @@
+.create-comment {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.create-comment .show-modal {
+    background-color: #fafafa;
+    color: rgba(233, 76, 161, 1);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .15s ease;
+}
+.create-comment .show-modal:hover {
+    color: #fafafa;
+    background-color: rgba(233, 76, 161, 1);
+    border: 1px solid #fafafa;
+}
+.create-comment .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    border-radius: 15px 15px 0 0;
+    width: 35%;
+    height: 580px;
+    transition: all .2s ease;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.create-comment .modal .close {
+    padding: 10px 15px;
+    background-color: rgba(233, 76, 161, 1);
+    color: #fafafa;
+    border: 1px solid transparent;
+    transition: all .15s ease;
+    cursor: pointer;
+}
+.create-comment .modal .close:hover {
+    background-color: #fafafa;
+    border: 1px solid rgba(233, 76, 161, 1);
+    color: rgba(233, 76, 161, 1);
+}
+.create-comment .modal form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.create-comment .modal form input,
+.create-comment .modal form textarea,
+.create-comment .modal form button {
+    width: 50%;
+    padding: 7px 10px;
+    background: rgba(233, 76, 161, 1);
+    border: none;
+    color: #fafafa;
+    font-size: 16px;
+}
+.create-comment .modal form input::placeholder,
+.create-comment .modal form textarea::placeholder {
+    color: #fafafa;
+    font-size: 16px;
+}
+.create-comment .modal form input:active,
+.create-comment .modal form textarea:active,
+.create-comment .modal form button:active {
+    border: none;
+}
+.create-comment .modal form button {
+    cursor: pointer;
+    transition: all .16s ease;
+    border: 1px solid transparent;
+}
+.create-comment .modal form button:hover {
+    border: 1px solid rgba(233, 76, 161, 1);
+    background-color: #fafafa;
+    color: rgba(233, 76, 161, 1);
+}
+.create-comment .modal form button:disabled:hover {
+    background: rgba(233, 76, 161, .5);
+    border: 1px solid transparent;
+    color: #fafafa;
+}
+.create-comment .modal form button:disabled {
+    background-color: rgba(233, 76, 161, 0.5);
+}
+.create-comment .modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+.create-comment .modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+    display: none;
+}
+.create-comment .modal-overlay.show {
+    display: block;
+}

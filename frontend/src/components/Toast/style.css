@@ -1,0 +1,44 @@
+.toast {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+.toast.hide {
+    display: none;
+}
+.toast.success {
+    background-color: #5cb85c;
+    color: #fff;
+}
+.toast.danger {
+    background-color: red;
+    color: #fff;
+}
+.toast button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.toast.success button {
+    background-color: #fff;
+    color: #5cb85c;
+}
+.toast.danger button {
+    background-color: #fff;
+    color: red
+}
+.toast p.description {
+    color: #fafafa;
+    width: 70%;
+    margin: 0;
+}

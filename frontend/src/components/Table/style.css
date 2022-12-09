@@ -1,0 +1,32 @@
+.data-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container {
+    width: 75%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(32,32,32,.3);
+    background-color: #fafafa;
+    text-align: center;
+}
+th, td {
+    padding: 14px 18px;
+}
+th {
+    background-color: #ba68c8;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+tr:nth-child(odd) {
+     background-color: #eee;
+}
